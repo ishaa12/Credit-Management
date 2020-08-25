@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../CM1/stylesheet.css">
+</head>
+<body>
+<div id="page">
+<h1>Credit-Management-System</h1>
+    <div class="center">
+        <h2>Add Customers</h2>
+        <form>&nbsp;&nbsp;Name:
+            <input type="text" placeholder="userName" id="getEmail" required="required"/><br>
+            creditLimit:
+            <input type="text" placeholder="creditLimit" id="getPass" required="required"/><br>
+            creditTotal:
+            <input type="text" placeholder="creditTotal" id="CheckPass" required="required"/><br>
+            <input type="button" value="Register"  onclick="register()">
+        </form>
+    </div>
+    <div class="center">
+        <h2>Customers Information</h2>
+        <table>
+            <tr><th>NO:</th><th>Customer Name:</th><th>Credit Limit :</th><th>Credit Total:</th></tr>
+            <tr id="hideRow" ><td id="no."></td><td id="userName"></td><td id="creditLimit"></td><td id="creditTotal"></td></tr>
+        </table>
+    </div>
+    <div class="center">
+        <h2>Customers Debit/Credit Operation </h2>
+        <form>
+            Customer Name:
+            <input  type="text" placeholder="userName" id="email" required="required"/><br>
+            Debit/Credit
+            <input type="text" placeholder="debit/credit" id="pwd" required="required"/><br>
+            <input type="button" onclick="debitAmount()" value="Debit">&nbsp;
+            <input type="button" onclick="creditAmount()" value="Credit">
+        </form>
+    </div>
+    <div class="center" id="padding">
+        <h2>Customers Delete Operation</h2>
+        <form>
+            Customer Name:<input  type="text" placeholder="userName" id="delUser" required="required"/><br>
+            <input type="button" onclick="del()" value="Delete Customer">&nbsp;
+            <input type="button" onclick="delAll()" value="Delete All Customers"><br>
+        </form>
+    </div>
+
+</div>
+<script src="credit_management_system.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+            margin: 0 auto;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 10px;
+            background: #8dc29f;
+            z-index: auto;
+            color: darkgreen;
+        }
+        td,th {
+            border: 1px double #C0C0C0;
+            text-align: center;
+            background: #c0c0c0;
+        }
+        .center{
+            clear: both;
+            border: 1px double #c0c0c0;
+            padding: 5px;
+            background: #ffffff;
+            box-shadow: inset 4px 4px 4px #7bcd89
+        }
+        table,tr,td,th {
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px;
+            background: #ffffff;
+        }
+        #padding {padding-bottom: 35px}
